@@ -1,7 +1,36 @@
 /* Estilos Gerais */
 
+:root {
+  --yellow-standard: #fec63e;
+  --white-standard: #fff;
+  --black-standard: #000;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Componentes padrão */
+.standard__buttom {
+  border: 3px solid var(--yellow-standard);
+  padding: 10px 30px;
+  color: var(--yellow-standard);
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.standard__buttom:hover {
+  color: var(--white-standard);
+  border-color: var(--white-standard);
 }
 
 /* Header */
@@ -10,22 +39,22 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #fec63e;
+  background: var(--yellow-standard);
   padding: 15px 0;
 }
 
-.header_menu {
+.header__menu {
   text-align: right;
 }
 
-.header_menu ul li {
+.header__menu ul li {
   display: inline-block;
   margin-left: 25px;
   margin-top: 20px;
 }
 
-.header_menu ul li a {
-  color: #000;
+.header__menu ul li a {
+  color: var(--black-standard);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -34,9 +63,54 @@ body {
   padding: 10px 0;
 }
 
-.header_menu ul li a:hover {
-  color: #fff;
+.header__menu ul li a:hover {
+  color: var(--white-standard);
   transition: 0.3s;
 }
 
 /* Introdução - Home */
+
+.section__introducao {
+  width: 100%;
+  height: 380px;
+  background: url(../assets/bg.jpg) no-repeat center;
+  background-size: cover;
+  margin-top: 96px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.section__introducao h1 {
+  font-size: 48px;
+  color: var(--white-standard);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section__quote {
+  max-width: 290px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: var(--white-standard);
+}
+
+.section__quote p {
+  font-style: italic;
+}
+
+.section__quote p::before,
+.section__quote p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--white-standard);
+  margin: 14px auto 10px auto;
+}
+
+.section__quote cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}

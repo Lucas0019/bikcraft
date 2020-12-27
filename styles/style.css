@@ -3,7 +3,7 @@
 :root {
   --yellow-standard: #fec63e;
   --white-standard: #fff;
-  --black-standard: #000;
+  --black-standard: #212121;
 }
 
 body {
@@ -33,7 +33,7 @@ p {
   border-color: var(--white-standard);
 }
 
-/* Header */
+/* Barra de Navegação */
 
 .header {
   position: fixed;
@@ -114,3 +114,5 @@ p {
   font-size: 14px;
   letter-spacing: 0.1em;
 }
+
+/* Produtos - HOME */

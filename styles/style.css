@@ -70,7 +70,7 @@ p {
 
 /* Introdução - Home */
 
-.section__introducao {
+.introducao {
   width: 100%;
   height: 380px;
   background: url(../assets/bg.jpg) no-repeat center;
@@ -80,26 +80,26 @@ p {
   padding-top: 80px;
 }
 
-.section__introducao h1 {
+.introducao h1 {
   font-size: 48px;
   color: var(--white-standard);
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.section__quote {
+.introducao__quote {
   max-width: 290px;
   margin: 0 auto;
   margin-bottom: 40px;
   color: var(--white-standard);
 }
 
-.section__quote p {
+.introducao__quote p {
   font-style: italic;
 }
 
-.section__quote p::before,
-.section__quote p::after {
+.introducao__quote p::before,
+.introducao__quote p::after {
   content: "";
   display: block;
   width: 60px;
@@ -108,7 +108,7 @@ p {
   margin: 14px auto 10px auto;
 }
 
-.section__quote cite {
+.introducao__quote cite {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;

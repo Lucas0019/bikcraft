@@ -17,6 +17,10 @@ p {
   line-height: 20px;
 }
 
+img {
+  display: block;
+}
+
 /* Componentes padrão */
 .buttom {
   border: 3px solid var(--yellow-standard);
@@ -102,7 +106,7 @@ p {
   height: 380px;
   background: url(../assets/bg.jpg) no-repeat center;
   background-size: cover;
-  margin-top: 96px;
+  margin-top: 92px;
   text-align: center;
   padding-top: 80px;
 }
@@ -213,4 +217,53 @@ p {
 .portfolio .produtos__info p {
   color: var(--white-standard);
   font-weight: 800;
+}
+
+/* Qualidade - HOME */
+
+.qualidade {
+  padding: 60px 0;
+}
+
+.qualidade::after {
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url(../assets/linhas.svg) no-repeat center;
+  position: absolute;
+  top: 209px;
+  right: 162px;
+  z-index: -1;
+}
+
+.qualidade__lista {
+  padding-top: 20px;
+}
+
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade__lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade__lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.qualidade__lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--black-standard);
+  margin: 6px auto;
 }

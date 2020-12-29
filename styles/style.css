@@ -1,10 +1,11 @@
-/* Estilos Gerais */
-
+/* Root */
 :root {
   --yellow-standard: #fec63e;
   --white-standard: #fff;
   --black-standard: #000;
 }
+
+/* Estilos Gerais */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -122,6 +123,7 @@ p {
 
 .introducao__quote p {
   font-style: italic;
+  font-weight: 800;
 }
 
 .introducao__quote p::before,
@@ -136,7 +138,7 @@ p {
 
 .introducao__quote cite {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 14px;
   letter-spacing: 0.1em;
 }
@@ -186,4 +188,29 @@ p {
 
 .produtos__info p {
   margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Portifólio - HOME */
+.portfolio {
+  width: 100%;
+  background: var(--black-standard);
+  padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+  color: var(--yellow-standard);
+}
+
+.portfolio .subtitulo::after {
+  background: var(--yellow-standard);
+}
+
+.portfolio__lista li:last-child {
+  margin-top: 20px;
+}
+
+.portfolio .produtos__info p {
+  color: var(--white-standard);
+  font-weight: 800;
 }

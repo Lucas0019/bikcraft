@@ -282,4 +282,60 @@ img {
 .quebra .introducao__quote {
   max-width: 400px;
 }
+
 /* Footer */
+.footer {
+  width: 100%;
+  background: var(--black-standard);
+  color: var(--white-standard);
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--yellow-standard);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--yellow-standard);
+  margin: 6px 0 12px 0;
+}
+
+.footer__historia {
+  padding-right: 40px;
+}
+
+.footer__contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer__redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer__redes ul li a {
+  border: 3px solid var(--yellow-standard);
+  display: block;
+  padding: 10px;
+}
+
+.footer__redes ul li a:hover {
+  border-color: var(--white-standard);
+}
+
+.footer__copyright {
+  width: 100%;
+  background: var(--yellow-standard);
+  padding: 20px 0;
+}

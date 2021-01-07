@@ -21,7 +21,7 @@ img {
   display: block;
 }
 
-/* Componentes padrão */
+/* Componentes padrão -  Geral */
 .buttom {
   border: 3px solid var(--yellow-standard);
   padding: 10px 30px;

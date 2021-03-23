@@ -1,0 +1,82 @@
+/* Root */
+:root {
+    --yellow-standard: #fec63e;
+    --white-standard: #fff;
+    --black-standard: #000;
+  }
+  
+  /* Estilos Gerais */
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  /* Componentes padrão -  Geral */
+  .buttom {
+    border: 3px solid var(--yellow-standard);
+    padding: 10px 30px;
+    color: var(--yellow-standard);
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+  
+  .buttom:hover {
+    color: var(--white-standard);
+    border-color: var(--white-standard);
+  }
+  
+  .buttom.buttom__black:hover {
+    color: var(--black-standard);
+    border-color: var(--black-standard);
+  }
+  
+  .subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--black-standard);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .subtitulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--black-standard);
+    margin: 8px auto;
+  }
+  .subtitulo__interno {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--black-standard);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .subtitulo__interno::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--black-standard);
+    margin: 8px 0;
+  }

@@ -1,5 +1,9 @@
+@import './root.css';
+
+/* Sobre */
 .interna__sobre {
     background: url('../assets/bg-sobre.jpg') no-repeat center;
+	background-size: cover;
 }
 
 .missao__sobre {

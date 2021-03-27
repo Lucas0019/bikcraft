@@ -1,3 +1,5 @@
+@import './respondive.css' ;
+
 /* Root */
 :root {
     --yellow-standard: #fec63e;
@@ -20,6 +22,7 @@
   
   img {
     display: block;
+    max-width: 100%;
   }
   
   /* Componentes padrão -  Geral */

@@ -1,4 +1,5 @@
 @import "./root.css";
+@import "./style.css";
 
 /* Produtos */
 .interna__produto {
@@ -79,4 +80,108 @@
 
 .produto__info ul li:nth-child(even) {
   margin-left: 2px;
+}
+
+
+/* Orçamento */
+.formulario {
+  background: var(--black-standard);
+  width: 100%;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.formulario h2 {
+  color: var(--yellow-standard);
+}
+
+.formulario h2::after {
+  background: var(--yellow-standard);
+}
+
+.form {
+  padding-right: 60px;
+}
+
+.form label {
+  display: block;
+  color: var(--white-standard);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  border: 4px solid var(--yellow-standard);
+  background: none;
+  color: var(--white-standard);
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form textarea {
+  display: block;
+  width: 100%;
+  border: 4px solid var(--yellow-standard);
+  background: none;
+  color: var(--white-standard);
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 180px;
+  resize: none;
+}
+
+.form button {
+  padding: 7px 40px;
+  background: none;
+}
+
+.dados__orcamento {
+  color: var(--white-standard);
+}
+
+.dados__orcamento h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: var(--yellow-standard);
+  font-weight: bold;
+}
+
+.dados__orcamento span {
+  display: block;
+  font-size:  18px;
+  line-height: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.dados__orcamento span:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.dados__orcamento ul {
+  padding-right: 60px;
+}
+
+.dados__orcamento ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.dados__orcamento ul li:nth-child(odd) {
+  background: var(--greyblack-standard)
+}
+
+.dados__orcamento p {
+  margin-top: 10px;
 }

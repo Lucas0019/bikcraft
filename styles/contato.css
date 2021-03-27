@@ -1,0 +1,8 @@
+@import "./root.css";
+@import "./style.css";
+
+/* Produtos */
+.interna__contato {
+  background: url("../assets/bg-contato.jpg") no-repeat center;
+  background-size: cover;
+}

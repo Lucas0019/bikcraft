@@ -1,0 +1,105 @@
+@import "./root.css";
+@import "./style.css";
+
+/* Produtos */
+.interna__contato {
+    background: url("../assets/bg-contato.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* Contato */
+.contato {
+    padding: 40px 0;
+}
+
+.form__contatoulario h2::after {
+    background: var(--yellow-standard);
+}
+
+.form__contato {
+    padding-right: 60px;
+}
+
+.form__contato label {
+    display: block;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form__contato input {
+    display: block;
+    width: 100%;
+    border: 4px solid var(--yellow-standard);
+    background: none;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form__contato textarea {
+    display: block;
+    width: 100%;
+    border: 4px solid var(--yellow-standard);
+    background: none;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    height: 180px;
+    resize: none;
+}
+
+.form__contato button {
+    padding: 7px 40px;
+    background: none;
+}
+
+.dados__contato h3 {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--yellow-standard);
+    font-weight: bold;
+}
+
+.dados__contato span {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.dados__contato span:nth-of-type(even) {
+    margin-bottom: 30px;
+}
+
+.dados__contato ul {
+    margin-top: 10px;
+}
+
+.dados__contato ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .dados__contato ul li a {
+    border: 3px solid var(--yellow-standard);
+    display: block;
+    padding: 10px;
+  }
+  
+  .dados__contato ul li a:hover {
+    border-color: var(--black-standard);
+  }
+
+  .mapa__contato {
+      margin-bottom: 60px;
+  }
+
+ 

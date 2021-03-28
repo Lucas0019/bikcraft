@@ -20,6 +20,7 @@
   
   img {
     display: block;
+    max-width: 100%;
   }
   
   /* Componentes padrão -  Geral */

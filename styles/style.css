@@ -125,7 +125,11 @@
 
 .produtos__lista li {
   background: var(--yellow-standard);
-  text-align: center;
+  text-align:  center;
+}
+
+.produtos__lista li  img{
+  margin: 0 auto;
 }
 
 .produtos__lista li h3 {

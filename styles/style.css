@@ -1,4 +1,5 @@
 @import './root.css';
+@import './plugins.css';
 
 
 /* Barra de Navegação */
@@ -310,3 +311,4 @@
   background: var(--yellow-standard);
   padding: 20px 0;
 }
+

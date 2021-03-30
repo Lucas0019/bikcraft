@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="../styles/style.css" />
   <link rel="stylesheet" href="../styles/sobre.css" />
   <link rel="stylesheet" href="../styles/respondive.css" />
+  <script>document.documentElement.classList.add('js')</script>
+
 </head>
 
 <body>
@@ -39,14 +41,14 @@
   <!-- Introdução - HOME -->
   <section class="introducao__interna interna__sobre">
     <div class="container">
-      <h1>Sobre</h1>
-      <p>conheca mais sobre a bikcraft</p>
+      <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+      <p data-anime="800" class="fadeInDown">conheca mais sobre a bikcraft</p>
     </div>
   </section>
 
 
   <!-- Sobre -->
-  <section class="missao__sobre container animar_interno">
+  <section data-anime="1200"class="fadeInDown missao__sobre container animar_interno">
     <div class="grid-10">
       <h2 class="subtitulo__interno">História, Missão e Visão</h2>
       <p>
@@ -164,6 +166,9 @@
     </div>
   </footer>
 
+  <!-- JavaScript -->
+  <script src="../scripts/simple-anime.js"></script>
+  <script src="../scripts/main.js"></script>
 </body>
 
 </html>

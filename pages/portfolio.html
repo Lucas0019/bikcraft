@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/portfolio.css" />
     <link rel="stylesheet" href="../styles/respondive.css" />
+    <script>document.documentElement.classList.add('js')</script>
+
   </head>
 
   <body>
@@ -38,13 +40,13 @@
     <!-- Introdução - HOME -->
     <section class="introducao__interna interna__portfolio">
       <div class="container">
-        <h1>Portfólio</h1>
-        <p>conheca os projetos que amamos mostrar</p>
+        <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+        <p data-anime="800" class="fadeInDown">conheca os projetos que amamos mostrar</p>
       </div>
     </section>
 
     <!-- Quote -->
-    <section class="container">
+    <section class="fadeInDown container" data-anime="1200" data-slide="quote">
       <blockquote class="quote__portfolio">
         <p>
           “Pedalar sempre foi a minha paixão, 
@@ -53,11 +55,27 @@
         </p>
         <cite>Barbara Moss</cite>
       </blockquote>
+      <blockquote class="quote__portfolio">
+        <p>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Dignissimos nobis ipsum.""
+        </p>
+        <cite>Eduarda</cite>
+      </blockquote>
+      <blockquote class="quote__portfolio">
+        <p>
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit
+          Dignissimos nobis ipsum "
+        </p>
+        <cite>Ana</cite>
+      </blockquote>
     </section>
 
     <!-- Portfolio -->
     <section class="portfolio">
-      <div class="container">
+      <div class="container" data-slide="portfolio">
         <ul class="portfolio__lista">
           <li class="grid-8">
             <img src="../assets/portfolio/retro.jpg" alt="Bicicletas-retro">
@@ -65,6 +83,19 @@
   
           <li class="grid-8">
             <img src="../assets/portfolio/passeio.jpg" alt="Bicicletas-passeio">
+          </li>
+  
+          <li class="grid-16">
+            <img src="../assets/portfolio/esporte.jpg" alt="Bicicletas-esporte">
+          </li>
+        </ul>
+        <ul class="portfolio__lista">
+          <li class="grid-8">
+            <img src="../assets/portfolio/passeio.jpg" alt="Bicicletas-passeio">
+          </li>
+
+          <li class="grid-8">
+            <img src="../assets/portfolio/retro.jpg" alt="Bicicletas-retro">
           </li>
   
           <li class="grid-16">
@@ -149,5 +180,10 @@
         </div>
       </div>
     </footer>
+
+  <!-- JavaScript -->
+  <script src="../scripts/simple-anime.js"></script>
+  <script src="../scripts/simple-slide.js"></script>
+  <script src="../scripts/main.js"></script>
   </body>
 </html>

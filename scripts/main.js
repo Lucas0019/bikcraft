@@ -1,3 +1,4 @@
+// Simple Slide
 if (window.SimpleSlide) {
     new SimpleSlide({
         slide: 'quote', // nome do atributo data-slide="principal"
@@ -11,4 +12,9 @@ if (window.SimpleSlide) {
         nav: true,
         pauseOnHover: true, // pausa a transição automática
     });
+}
+
+// Simple Animne
+if (window.SimpleAnime) {
+    new SimpleAnime({ })
 }

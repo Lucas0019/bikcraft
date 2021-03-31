@@ -312,3 +312,18 @@
   padding: 20px 0;
 }
 
+/* Não aparece */
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+/* Mensagem do Form */
+#form-sucesso {
+  color: aquamarine;
+}
+
+#form-erro {
+  color: tomato;
+}

@@ -3,9 +3,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require "./PHPMailer/src/Exception.php";
-require "./PHPMailer/src/PHPMailer.php";
-require "./PHPMailer/src/SMTP.php";
+require "./server/PHPMailer/src/Exception.php";
+require "./server/PHPMailer/src/PHPMailer.php";
+require "./server/PHPMailer/src/SMTP.php";
   
 // Mudar Aqui o e-mail
 $email_envio = ""; // E-mail do site (ex: contato@seusite.com)

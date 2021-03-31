@@ -1,8 +1,8 @@
 <?php
 
-require("./sendgrid-php/sendgrid-php.php");
+require("./server/sendgrid-php/sendgrid-php.php");
 
-$email_site = "contato@bikcraft.com";
+$email_site = "lsxavier.00@gmail.com";
 $nome_site = "Bikcraft";
 
 $email_user = $_POST["email"];
@@ -25,7 +25,8 @@ $email->setReplyTo($email_user, $nome_user);
 $email->setSubject("Formulário Bikcraft");
 $email->addContent("text/plain", $body_content);
 
-$sendgrid = new \SendGrid("COLOQUE A API AQUI");
+// API KEY - SendGrid
+$sendgrid = new \SendGrid("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");
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";

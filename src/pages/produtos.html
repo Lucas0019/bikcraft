@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikcraft | Produtos</title>
+    <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuimos modelos Passeio, Retrô e Esporte">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Bikcraft - Bicicletas Personalizadas"/>  
+    <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuimos modelos Passeio, Retrô e Esporte"/>
+    <meta property="og:url" content="http://site.com"/>  
+    <meta property="og:image" content="http://site.com/assets/og-image.png"/>  
+  
+    <link rel="shortcut icon" href="../assets/favicon.ico">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/normalize.css" />
-    <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/grid.css" />
-
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/produtos.css" />
-    <link rel="stylesheet" href="../styles/respondive.css" />
+    <link rel="stylesheet" href="../main.min.css" />
     <script>document.documentElement.classList.add('js')</script>
 
   </head>
@@ -128,16 +131,28 @@
     <section class="formulario">
       <div class="container">
         <h2 class="subtitulo">Orçamento</h2>
-        <form id="form__orcamento" class="form grid-8">
+        <form 
+          id="form__orcamento"
+          method="POST"
+          action="../../enviar-sendgrid.php"  
+          class="form grid-8 formphp"
+        >
           <label for="nome">Nome</label>
-          <input type="text" id="nome">
+          <input type="text" id="nome" name="nome" required>
           <label for="email">E-mail</label>
-          <input type="text" id="email">
+          <input type="email" id="email"name="email" required>
           <label for="telefone">Telefone</label>
-          <input type="text" id="telefone">
-          <label for="espec">Especificações</label>
-          <textarea id="espec"></textarea>
-          <button type="submit" class="button">Enviar</button>
+          <input type="text" id="telefone" name="telefone">
+
+          <!-- Macete para evitar sapn - 90% funcional -->
+          <label class="nao-aparece">Se voce não é um robô, deixe em branco</label>
+          <input type="text" class="nao-aparece" name="leaveblank">
+          <label class="nao-aparece">Se voce não é um robô, não mude esse campo</label>
+          <input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <button id="enviar" name="enviar" type="submit" class="button">Enviar</button>
         </form>
 
         <div class="dados__orcamento grid-8">
@@ -234,6 +249,7 @@
 
       <!-- JavaScript -->
   <script src="../scripts/simple-anime.js"></script>
+  <script src="../scripts/simple-form.js"></script>
   <script src="../scripts/main.js"></script>
   </body>
 </html>
